@@ -31,7 +31,7 @@ jobs:
         id: build-image
         run: |
           echo "Pushing image to ECR..."
-          img_version =667678787
+          img_version=667678787
           echo "::set-output name=image::$img_version"
 
   release:
