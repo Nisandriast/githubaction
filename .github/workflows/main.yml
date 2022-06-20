@@ -31,7 +31,8 @@ jobs:
         id: build-image
         run: |
           echo "Pushing image to ECR..."
-          echo "::set-output name=image::589459458948"
+          img_version =667678787
+          echo "::set-output name=image::$img_version"
 
   release:
        runs-on: ubuntu-latest
